@@ -1,0 +1,71 @@
+/* ######### Shared basic style for mega drop down menu DIV ######### */
+
+.mega{
+width:300px; /*default width of mega menu*/
+padding:10px;
+position:absolute;
+visibility:hidden;
+border-top-width:1px;
+background:white;
+-webkit-box-shadow: 5px 5px 5px #c8c8c8; /*css 3 shadows*/
+-moz-box-shadow: 5px 5px 5px #c8c8c8;
+box-shadow: 5px 5px 5px #c8c8c8;
+}
+
+.colunm {
+	font-family: notokr-medium;
+}
+
+.column ul li{
+	float: left;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+
+.column li a{
+	text-decoration: none;
+	font-size: 14px;
+	font-family: notokr-medium;
+}
+
+.column li a:link, a:visited{
+	text-decoration: none;
+	font-size: 14px;
+	color:#56504c;
+	font-family:notokr-demilight;
+}
+
+.column li a:hover, a:active{
+	text-decoration: none;
+	font-size: 14px;
+	color:#990200;
+	font-family:notokr-demilight;
+}
+
+.solidblockmenu{
+	margin: 0;
+	padding: 0;
+	float: left;
+	margin-bottom: 1em;
+	border-width: 1px 0;
+	width:1000px;
+	height:40px;
+	background-color:#FFF;
+	font-family:notokr-demilight;
+	
+}
+
+.solidblockmenu li{
+	display: inline;
+	margin-bottom:5px;
+	background-color:#FFF;
+}
+
+.solidblockmenu li a{
+	float: left;
+	padding: 9px 11px;
+	text-decoration: none;
+	font-size:14px;
+	color:#56504c;
+}

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" >
+<title>Daldal Coffee</title>
+
+<link rel="stylesheet" type="text/css" href="css/css_catering.css">
+<link rel="stylesheet" type="text/css" href="css/catering.css">
+<link rel="stylesheet" type="text/javascript" href="js/catering.jss">
+
+<!--폰트-->
+<style type="text/css">
+@font-face {
+      font-family: 'notokr-bold';  
+      src: url('font/notokr-bold.eot');  
+      src: url('font/notokr-bold.eot?#iefix') format('embedded-opentype'),
+           url('font/notokr-bold.woff2') format('woff2'),
+           url('font/notokr-bold.woff') format('woff'), 
+           url('font/notokr-bold.ttf') format('truetype'),
+           url('font/notokr-bold.svg#notokr-bold') format('svg');
+      font-weight: normal;
+      font-style: normal;    
+     }
+@font-face {
+      font-family: 'notokr-medium';  
+      src: url('font/notokr-medium.eot');  
+      src: url('font/notokr-medium.eot?#iefix') format('embedded-opentype'),
+           url('font/notokr-medium.woff2') format('woff2'),
+           url('font/notokr-medium.woff') format('woff'), 
+           url('font/notokr-medium.ttf') format('truetype'),
+           url('font/notokr-medium.svg#notokr-medium') format('svg');
+      font-weight: normal;
+      font-style: normal;    
+     }
+@font-face {
+      font-family: 'notokr-demilight';  
+      src: url('font/notokr-demilight.eot');  
+      src: url('font/notokr-demilight.eot?#iefix') format('embedded-opentype'),
+           url('font/notokr-demilight.woff2') format('woff2'),
+           url('font/notokr-demilight.woff') format('woff'), 
+           url('font/notokr-demilight.ttf') format('truetype'),
+           url('font/notokr-demilight.svg#notokr-demilight') format('svg');
+      font-weight: normal;
+      font-style: normal;    
+     }
+  
+</style>
+<!--폰트 end-->
+
+<!--메뉴바 js-->
+<link rel="stylesheet" type="text/css" href="css/ddmegamenu.css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script src="js/ddmegamenu.js"></script>
+<script>
+ddmegamenu.docinit({
+	menuid:'solidmenu',
+	dur:1 //<--no comma after last setting
+})
+
+ddmegamenu.docinit({
+	menuid:'megaanchorlink',
+	dur:10,
+	easing:'easeInOutCirc' //<--no comma after last setting
+})
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+<!--메뉴바 js end-->
+</head>
+
+<body onLoad="MM_preloadImages('button/facebook_icon_red.jpg','button/instagram_icon_red.jpg')">
+<div id="header_container">
+	<div id="header">
+		<a href="index.html"><img class="header_img" src="img/logo.png" width="200" height="200"></a>
+	</div> <!--header end-->
+</div> <!--header container end-->
+
+<div id="menu_container">
+	<div id="menu">
+    	<ul id="solidmenu" class="solidblockmenu">
+			<li class="menu_margin1"><a href="about_daldal.html" rel="jkmenu1">ABOUT</a></li>
+            <li class="menu_margin2"><a href="menu_coffee.html" rel="jkmenu2">MENU</a></li>
+            <li class="menu_margin2"><a href="catering.html">CATERING</a></li>
+            <li class="menu_margin2"><a href="dating.html">DATING</a></li>
+            <li class="menu_margin2"><a href="event.html">EVENT</a></li>
+		</ul>
+		<!--First mega menu-->
+		<div id="jkmenu1">
+		<div class="column">
+			<ul>
+				<li><a href="about_daldal.html">DalDalhan Cafe</a></li>
+				<li><a href="about_gallery.html">Gallery</a></li>
+			</ul>
+		</div>
+		</div>
+		<!--Second mega menu-->
+		<div id="jkmenu2">
+		<div class="column">
+			<ul>
+				<li><a href="menu_coffee.html">Coffee</a></li>
+				<li><a href="menu_ade.html">Ade</a></li>
+    			<li><a href="menu_others.html">Others</a></li>
+			</ul>
+		</div>
+		</div>
+	</div> <!--menu end-->
+</div> <!--menu container end-->
+    
+    
+<div id="container">    
+	<div id="cater_con">
+    	<div id="cater_title" class="title"> Catering </div>
+        <div id="cater_content">
+        	<div id="cater_con1"><img class="img1" src="img/catering.jpg"></div>
+            <div id="cater_con2">
+            	<div id="cater_con2_1" class="text1">달달한 카페에서는 커피케이터링 서비스를 실시하고 있습니다. <br> 기본적으로 아메리카노와 카페라떼. 허브티 등의 음료와 떡, 쿠키 등의 사이드 메뉴를 준비하고 있습니다.<br> 아래의 메뉴를 참고하시어 필요하시어 원하시는 케이터링을 말씀해주세요!<br> </div>
+                <div id="cater_con2_2"><a href="menu_coffee.html"><img class="img2" src="button/catering_button.jpg"></a></div>
+            </div>
+            <div id="cater_con3" class="text1">이외에 메뉴 문의나 케이터링 요청을 원하시면 아래의 박스에 를 입력해주세요. <br>
+빠른 시일 내에 연락드리겠습니다:)</div>
+            <div id="cater_con4">
+
+   					<form id="contact" name="contact" accept-charset="utf-8">
+    <label><span>이름</span><input name="name" type="text" placeholder="이름 및 소속"/></label>
+    <label><span>연락처</span><input name="email" type="email" placeholder="연락처"/></label>
+    <label><span>이메일</span><input name="email" type="email" placeholder="이메일"/></label>
+    <label><span>문의사항</span><textarea name="message" placeholder="문의사항"></textarea></label>
+<button type="button" onclick="alert('문의가 접수되었습니다. 빠른 시일 내로 답변드리겠습니다:)')">문의하기</button>
+  </form>
+         	</div>
+        </div>
+        
+    </div> <!--about con end-->   
+</div> <!--container end-->
+
+<div id="footer_border">
+	<div id="footer_container">
+		<div id="footer">
+			<div id="footer_con1">
+    			<ul>
+        			<li class="footer_title">ADDRESS</li>
+          			<li class="footer_con1">서울특별시 노원구 공릉동</li>
+            		<li class="footer_con2"> 27-11 달달한 카페</li>
+        		</ul>
+    		</div>
+    		<div id="footer_con2">
+    			<ul>
+        			<li class="footer_title">OPENING HOURS</li>
+       				<li class="footer_con1">MON-FRI : 8 am - 9 pm</li>
+                    <li class="footer_con1">SAT/SUN : 10 am - 8 pm</li>
+        		</ul>    
+    		</div>
+   			<div id="footer_con3">
+				<ul>
+        			<li class="footer_title">CONTACT</li>
+           			<li class="footer_con1">CAFE　02-972-2729</li> 
+            		<li class="footer_con2">evverry2@naver.com</li>
+            		<li class="footer_con2">
+                    	<a href="https://www.facebook.com/Daldalcoffee" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image20','','button/facebook_icon_red.jpg',1)"><img class="footer_icon1" src="button/facebook_icon.jpg" alt="" width="25" height="25" id="Image20"></a> 
+                        <a href="https://instagram.com/blingjin/" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image6','','button/instagram_icon_red.jpg',1)"><img class="footer_icon2" src="button/instagram_icon.jpg" alt="" width="25" height="25" id="Image6"></a>
+           			</li>
+				</ul>
+   			</div>
+    		<div id="footer_con4">
+        		<ul>
+            		<li class="footer_title">INSTAGRAM</li>
+            		<li class="footer_con3"> 
+                		<!-- SnapWidget -->
+						<iframe src="http://snapwidget.com/in/?h=64us64us7ZWc7Lm07Y6YfGlufDY1fDN8Mnx8bm98MHxmYWRlT3V0fG9uU3RhcnR8bm98bm8=&ve=170615" title="Instagram Widget" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:195px; height:130px">
+                        </iframe>
+            		</li>
+        		</ul>
+    		</div>
+		</div> <!--footer end-->
+	</div> <!--footer container end--> 
+</div> <!--footer border end--> 
+
+</body>
+</html>

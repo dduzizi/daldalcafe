@@ -1,0 +1,82 @@
+@charset "utf-8";
+/* CSS Document */
+html {
+  font: 300 100%/1.5;
+  font-family:notokr-demilight;
+  color: #333;
+  overflow-x: hidden;
+}
+
+h2 {
+  margin: 0;
+  color: #8495a5;
+  font-size: 2.5em;
+  font-weight: 300;
+}
+
+#contact-form {
+  width: 600px;
+  height:500px;
+  margin: 0 auto;
+}
+
+#contact,
+label,
+input[name="submit"] {
+  position: relative;
+  width:680px;
+
+}
+
+label > span,
+input,
+textarea,
+button {
+  box-sizing: border-box;
+}
+
+label {
+  display: block;
+}
+
+label > span {
+  display: none;
+}
+
+input,
+textarea,
+button {
+  width: 100%;
+  padding: 0.5em;
+  border: none;
+  font: 600 100%/1.2 notokr-demilight;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  margin: 0 0 1em;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+input.invalid,
+textarea.invalid {
+  border-color: #d5144d;
+}
+
+textarea {
+  height: 6em;
+}
+
+input[type="submit"],
+button {
+  background: #ccc;
+  color: #333;
+}
+
+input[type="submit"]:hover,
+button:hover {
+  background: #f09183;
+  color: #fff;
+}

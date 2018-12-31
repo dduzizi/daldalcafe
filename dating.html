@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" >
+<title>Daldal Coffee</title>
+
+<link rel="stylesheet" type="text/css" href="css/css_dating.css">
+
+<!--폰트-->
+<style type="text/css">
+@font-face {
+      font-family: 'notokr-bold';  
+      src: url('font/notokr-bold.eot');  
+      src: url('font/notokr-bold.eot?#iefix') format('embedded-opentype'),
+           url('font/notokr-bold.woff2') format('woff2'),
+           url('font/notokr-bold.woff') format('woff'), 
+           url('font/notokr-bold.ttf') format('truetype'),
+           url('font/notokr-bold.svg#notokr-bold') format('svg');
+      font-weight: normal;
+      font-style: normal;    
+     }
+@font-face {
+      font-family: 'notokr-medium';  
+      src: url('font/notokr-medium.eot');  
+      src: url('font/notokr-medium.eot?#iefix') format('embedded-opentype'),
+           url('font/notokr-medium.woff2') format('woff2'),
+           url('font/notokr-medium.woff') format('woff'), 
+           url('font/notokr-medium.ttf') format('truetype'),
+           url('font/notokr-medium.svg#notokr-medium') format('svg');
+      font-weight: normal;
+      font-style: normal;    
+     }
+@font-face {
+      font-family: 'notokr-demilight';  
+      src: url('font/notokr-demilight.eot');  
+      src: url('font/notokr-demilight.eot?#iefix') format('embedded-opentype'),
+           url('font/notokr-demilight.woff2') format('woff2'),
+           url('font/notokr-demilight.woff') format('woff'), 
+           url('font/notokr-demilight.ttf') format('truetype'),
+           url('font/notokr-demilight.svg#notokr-demilight') format('svg');
+      font-weight: normal;
+      font-style: normal;    
+     }
+</style>
+<!--폰트 end-->
+
+<!--메뉴바 js-->
+<link rel="stylesheet" type="text/css" href="css/ddmegamenu.css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script src="js/ddmegamenu.js"></script>
+<script>
+ddmegamenu.docinit({
+	menuid:'solidmenu',
+	dur:1 //<--no comma after last setting
+})
+
+ddmegamenu.docinit({
+	menuid:'megaanchorlink',
+	dur:10,
+	easing:'easeInOutCirc' //<--no comma after last setting
+})
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+<!--메뉴바 js end-->
+</head>
+
+<body onLoad="MM_preloadImages('button/instagram_icon_red.jpg')">
+<div id="header_container">
+	<div id="header">
+		<a href="index.html"><img class="header_img" src="img/logo.png" width="200" height="200"></a>
+	</div> <!--header end-->
+</div> <!--header container end-->
+
+<div id="menu_container">
+	<div id="menu">
+    	<ul id="solidmenu" class="solidblockmenu">
+			<li class="menu_margin1"><a href="about_daldal.html" rel="jkmenu1">ABOUT</a></li>
+            <li class="menu_margin2"><a href="menu_coffee.html" rel="jkmenu2">MENU</a></li>
+            <li class="menu_margin2"><a href="catering.html">CATERING</a></li>
+            <li class="menu_margin2"><a href="dating.html">DATING</a></li>
+            <li class="menu_margin2"><a href="event.html">EVENT</a></li>
+		</ul>
+		<!--First mega menu-->
+		<div id="jkmenu1">
+		<div class="column">
+			<ul>
+				<li><a href="about_daldal.html">DalDalhan Cafe</a></li>
+				<li><a href="about_gallery.html">Gallery</a></li>
+			</ul>
+		</div>
+		</div>
+		<!--Second mega menu-->
+		<div id="jkmenu2">
+		<div class="column">
+			<ul>
+				<li><a href="menu_coffee.html">Coffee</a></li>
+				<li><a href="menu_ade.html">Ade</a></li>
+    			<li><a href="menu_others.html">Others</a></li>
+			</ul>
+		</div>
+		</div>
+	</div> <!--menu end-->
+</div> <!--menu container end-->
+    
+<div id="container">    
+	<div id="dating_con">
+    	<div id="dating_title" class="title"> Dating </div>
+        <div id="dating_content">
+        	<div id="dating_con1">
+            	<img src="img/dating_lettering.png">
+            
+            </div>
+            <div id="dating_con2"><span class="text1"> 1. 달력에서 원하는 날짜를 선택해 클릭하세요. <br> 2. 예약창에 학교 및 인원 정보를 기입해주세요. <br> 3. 양쪽 모두 선택된 날은 확인 후 달달한 카페에서 연락을 드립니다. <br> 4. 하트 표시가 뜨면 예약완료!</span>
+            
+            </div>
+            <div id="dating_con3">
+            	<div id="calendar"></div>
+            </div>
+        </div>
+        	
+    </div> <!--about con end-->   
+</div> <!--container end-->
+
+<div id="footer_border">
+	<div id="footer_container">
+		<div id="footer">
+			<div id="footer_con1">
+    			<ul>
+        			<li class="footer_title">ADDRESS</li>
+          			<li class="footer_con1">서울특별시 노원구 공릉동</li>
+            		<li class="footer_con2"> 27-11 달달한 카페</li>
+        		</ul>
+    		</div>
+    		<div id="footer_con2">
+    			<ul>
+        			<li class="footer_title">OPENING HOURS</li>
+       				<li class="footer_con1">MON-FRI : 8 am - 9 pm</li>
+                    <li class="footer_con1">SAT/SUN : 10 am - 8 pm</li>
+        		</ul>    
+    		</div>
+   			<div id="footer_con3">
+				<ul>
+        			<li class="footer_title">CONTACT</li>
+           			<li class="footer_con1">CAFE　02-972-2729</li> 
+            		<li class="footer_con2">evverry2@naver.com</li>
+            		<li class="footer_con2">
+                    	<a href="https://www.facebook.com/Daldalcoffee" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image80','','button/facebook_icon_red.jpg',0)"><img class="footer_icon1" src="button/facebook_icon.jpg" alt="" width="25" height="25" id="Image80"></a> 
+                    <a href="https://instagram.com/blingjin/" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image81','','button/instagram_icon_red.jpg',1)"><img class="footer_icon2" src="button/instagram_icon.jpg" alt="" width="25" height="25" id="Image81"></a> </li>
+				</ul>
+   			</div>
+    		<div id="footer_con4">
+        		<ul>
+            		<li class="footer_title">INSTAGRAM</li>
+            		<li class="footer_con3"> 
+                		<!-- SnapWidget -->
+						<iframe src="http://snapwidget.com/in/?h=64us64us7ZWc7Lm07Y6YfGlufDY1fDN8Mnx8bm98MHxmYWRlT3V0fG9uU3RhcnR8bm98bm8=&ve=170615" title="Instagram Widget" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:195px; height:130px">
+                        </iframe>
+            		</li>
+        		</ul>
+    		</div>
+		</div> <!--footer end-->
+	</div> <!--footer container end--> 
+</div> <!--footer border end--> 
+<!--dating 캘린더 js-->
+<script src="js/moment.min.js"></script>
+<script src="js/stopExecutionOnTimeout.js"></script>
+<script>
+!function () {
+    var today = moment();
+    function Calendar(selector, events) {
+        this.el = document.querySelector(selector);
+        this.events = events;
+        this.current = moment().date(1);
+        this.draw();
+        var current = document.querySelector('.today');
+        if (current) {
+            var self = this;
+            window.setTimeout(function () {
+                self.openDay(current);
+            }, 500);
+        }
+    }
+    Calendar.prototype.draw = function () {
+        this.drawHeader();
+        this.drawMonth();
+        this.drawLegend();
+    };
+    Calendar.prototype.drawHeader = function () {
+        var self = this;
+        if (!this.header) {
+            this.header = createElement('div', 'header');
+            this.header.className = 'header';
+            this.title = createElement('h1');
+            var right = createElement('div', 'right');
+            right.addEventListener('click', function () {
+                self.nextMonth();
+            });
+            var left = createElement('div', 'left');
+            left.addEventListener('click', function () {
+                self.prevMonth();
+            });
+            this.header.appendChild(this.title);
+            this.header.appendChild(right);
+            this.header.appendChild(left);
+            this.el.appendChild(this.header);
+        }
+        this.title.innerHTML = this.current.format('MMMM YYYY');
+    };
+    Calendar.prototype.drawMonth = function () {
+        var self = this;
+        this.events.forEach(function (ev) {
+            ev.date = self.current.clone().date(Math.random() * (29 - 1) + 1);
+        });
+        if (this.month) {
+            this.oldMonth = this.month;
+            this.oldMonth.className = 'month out ' + (self.next ? 'next' : 'prev');
+            this.oldMonth.addEventListener('webkitAnimationEnd', function () {
+                self.oldMonth.parentNode.removeChild(self.oldMonth);
+                self.month = createElement('div', 'month');
+                self.backFill();
+                self.currentMonth();
+                self.fowardFill();
+                self.el.appendChild(self.month);
+                window.setTimeout(function () {
+                    self.month.className = 'month in ' + (self.next ? 'next' : 'prev');
+                }, 16);
+            });
+        } else {
+            this.month = createElement('div', 'month');
+            this.el.appendChild(this.month);
+            this.backFill();
+            this.currentMonth();
+            this.fowardFill();
+            this.month.className = 'month new';
+        }
+    };
+    Calendar.prototype.backFill = function () {
+        var clone = this.current.clone();
+        var dayOfWeek = clone.day();
+        if (!dayOfWeek) {
+            return;
+        }
+        clone.subtract('days', dayOfWeek + 1);
+        for (var i = dayOfWeek; i > 0; i--) {
+            this.drawDay(clone.add('days', 1));
+        }
+    };
+    Calendar.prototype.fowardFill = function () {
+        var clone = this.current.clone().add('months', 1).subtract('days', 1);
+        var dayOfWeek = clone.day();
+        if (dayOfWeek === 6) {
+            return;
+        }
+        for (var i = dayOfWeek; i < 6; i++) {
+            this.drawDay(clone.add('days', 1));
+        }
+    };
+    Calendar.prototype.currentMonth = function () {
+        var clone = this.current.clone();
+        while (clone.month() === this.current.month()) {
+            this.drawDay(clone);
+            clone.add('days', 1);
+        }
+    };
+    Calendar.prototype.getWeek = function (day) {
+        if (!this.week || day.day() === 0) {
+            this.week = createElement('div', 'week');
+            this.month.appendChild(this.week);
+        }
+    };
+    Calendar.prototype.drawDay = function (day) {
+        var self = this;
+        this.getWeek(day);
+        var outer = createElement('div', this.getDayClass(day));
+        outer.addEventListener('click', function () {
+            self.openDay(this);
+        });
+        var name = createElement('div', 'day-name', day.format('ddd'));
+        var number = createElement('div', 'day-number', day.format('DD'));
+        var events = createElement('div', 'day-events');
+        this.drawEvents(day, events);
+        outer.appendChild(name);
+        outer.appendChild(number);
+        outer.appendChild(events);
+        this.week.appendChild(outer);
+    };
+    Calendar.prototype.drawEvents = function (day, element) {
+        if (day.month() === this.current.month()) {
+            var todaysEvents = this.events.reduce(function (memo, ev) {
+                if (ev.date.isSame(day, 'day')) {
+                    memo.push(ev);
+                }
+                return memo;
+            }, []);
+            todaysEvents.forEach(function (ev) {
+                var evSpan = createElement('span', ev.color);
+                element.appendChild(evSpan);
+            });
+        }
+    };
+    Calendar.prototype.getDayClass = function (day) {
+        classes = ['day'];
+        if (day.month() !== this.current.month()) {
+            classes.push('other');
+        } else if (today.isSame(day, 'day')) {
+            classes.push('today');
+        }
+        return classes.join(' ');
+    };
+    Calendar.prototype.openDay = function (el) {
+        var details, arrow;
+        var dayNumber = +el.querySelectorAll('.day-number')[0].innerText || +el.querySelectorAll('.day-number')[0].textContent;
+        var day = this.current.clone().date(dayNumber);
+        var currentOpened = document.querySelector('.details');
+        if (currentOpened && currentOpened.parentNode === el.parentNode) {
+            details = currentOpened;
+            arrow = document.querySelector('.arrow');
+        } else {
+            if (currentOpened) {
+                currentOpened.addEventListener('webkitAnimationEnd', function () {
+                    currentOpened.parentNode.removeChild(currentOpened);
+                });
+                currentOpened.addEventListener('oanimationend', function () {
+                    currentOpened.parentNode.removeChild(currentOpened);
+                });
+                currentOpened.addEventListener('msAnimationEnd', function () {
+                    currentOpened.parentNode.removeChild(currentOpened);
+                });
+                currentOpened.addEventListener('animationend', function () {
+                    currentOpened.parentNode.removeChild(currentOpened);
+                });
+                currentOpened.className = 'details out';
+            }
+            details = createElement('div', 'details in');
+            var arrow = createElement('div', 'arrow');
+            details.appendChild(arrow);
+            el.parentNode.appendChild(details);
+        }
+        var todaysEvents = this.events.reduce(function (memo, ev) {
+            if (ev.date.isSame(day, 'day')) {
+                memo.push(ev);
+            }
+            return memo;
+        }, []);
+        this.renderEvents(todaysEvents, details);
+        arrow.style.left = el.offsetLeft - el.parentNode.offsetLeft + 27 + 'px';
+    };
+    Calendar.prototype.renderEvents = function (events, ele) {
+        var currentWrapper = ele.querySelector('.events');
+        var wrapper = createElement('div', 'events in' + (currentWrapper ? ' new' : ''));
+        events.forEach(function (ev) {
+            var div = createElement('div', 'event');
+            var square = createElement('div', 'event-category ' + ev.color);
+            var span = createElement('span', '', ev.eventName);
+            div.appendChild(square);
+            div.appendChild(span);
+            wrapper.appendChild(div);
+        });
+        if (!events.length) {
+            var div = createElement('div', 'event empty');
+            var span = createElement('span', '', 'No Events');
+            div.appendChild(span);
+            wrapper.appendChild(div);
+        }
+        if (currentWrapper) {
+            currentWrapper.className = 'events out';
+            currentWrapper.addEventListener('webkitAnimationEnd', function () {
+                currentWrapper.parentNode.removeChild(currentWrapper);
+                ele.appendChild(wrapper);
+            });
+            currentWrapper.addEventListener('oanimationend', function () {
+                currentWrapper.parentNode.removeChild(currentWrapper);
+                ele.appendChild(wrapper);
+            });
+            currentWrapper.addEventListener('msAnimationEnd', function () {
+                currentWrapper.parentNode.removeChild(currentWrapper);
+                ele.appendChild(wrapper);
+            });
+            currentWrapper.addEventListener('animationend', function () {
+                currentWrapper.parentNode.removeChild(currentWrapper);
+                ele.appendChild(wrapper);
+            });
+        } else {
+            ele.appendChild(wrapper);
+        }
+    };
+    Calendar.prototype.drawLegend = function () {
+        var legend = createElement('div', 'legend');
+        var calendars = this.events.map(function (e) {
+            return e.calendar + '|' + e.color;
+        }).reduce(function (memo, e) {
+            if (memo.indexOf(e) === -1) {
+                memo.push(e);
+            }
+            return memo;
+        }, []).forEach(function (e) {
+            var parts = e.split('|');
+            var entry = createElement('span', 'entry ' + parts[1], parts[0]);
+            legend.appendChild(entry);
+        });
+        this.el.appendChild(legend);
+    };
+    Calendar.prototype.nextMonth = function () {
+        this.current.add('months', 1);
+        this.next = true;
+        this.draw();
+    };
+    Calendar.prototype.prevMonth = function () {
+        this.current.subtract('months', 1);
+        this.next = false;
+        this.draw();
+    };
+    window.Calendar = Calendar;
+    function createElement(tagName, className, innerText) {
+        var ele = document.createElement(tagName);
+        if (className) {
+            ele.className = className;
+        }
+        if (innerText) {
+            ele.innderText = ele.textContent = innerText;
+        }
+        return ele;
+    }
+}();
+!function () {
+    var data = [
+        {
+            eventName: 'pm 6:00 / 서울여대 2명',
+            calendar: '서울여대',
+            color: 'yellow'
+        },
+        {
+            eventName: 'pm 6:00 / 서울여대 3명',
+            calendar: '서울여대',
+            color: 'yellow'
+        },
+        {
+            eventName: 'pm 6:00 / 서울여대 2명',
+            calendar: '서울여대',
+            color: 'yellow'
+        },
+        {
+            eventName: 'pm 5:30 / 서울여대 4명',
+            calendar: '서울여대',
+            color: 'yellow'
+        },
+        {
+            eventName: 'pm 6:00 / 육사 3명',
+            calendar: '육사',
+            color: 'blue'
+        },
+        {
+            eventName: 'pm 6:00 / 육사 2명',
+            calendar: '육사',
+            color: 'blue'
+        },
+        {
+            eventName: 'pm 6:00 / 육사 3명',
+            calendar: '육사',
+            color: 'blue'
+        },
+        {
+            eventName: 'pm 5:30 / 육사 2명',
+            calendar: '육사',
+            color: 'blue'
+        },
+        {
+            eventName: 'pm 6:00 / 서울여대 3명',
+            calendar: '서울여대',
+            color: 'yellow'
+        },
+        {
+            eventName: 'pm 6:00 / 서울여대 3명',
+            calendar: '서울여대',
+            color: 'yellow'
+        },
+        {
+            eventName: 'pm 5:30 / 육사 2명',
+            calendar: '육사',
+            color: 'blue'
+        },
+        {
+            eventName: 'pm 5:30 / 육사 2명',
+            calendar: '육사',
+            color: 'blue'
+        },
+        {
+            eventName: 'pm 6:00 / 서울여대 3명',
+            calendar: '서울여대',
+            color: 'yellow'
+        },
+        {
+            eventName: 'pm 5:30 / 육사 3명',
+            calendar: '육사',
+            color: 'blue'
+        },
+        {
+            eventName: 'pm 5:30 / 육사 4명',
+            calendar: '육사',
+            color: 'blue'
+        },
+        {
+            eventName: 'pm 5:30 / 육사 2명',
+            calendar: '육사',
+            color: 'blue'
+        }
+    ];
+    function addDate(ev) {
+    }
+    var calendar = new Calendar('#calendar', data);
+}();
+//@ sourceURL=pen.js
+</script>
+<script src='/assets/editor/live/css_live_reload_init.js'></script>
+
+<!--dating 캘린더 js end-->
+
+</body>
+</html>
